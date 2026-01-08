@@ -1,39 +1,38 @@
-# MyCloud – Distributed Student Housing and Roommate Matching System  
+# MyCloud – Distributed Agricultural Data and Resource Management System  
 
-> **🚀 Quick Start**: See [STARTUP_INSTRUCTIONS.md](STARTUP_INSTRUCTIONS.md) to get the distributed storage working!  
-> **📊 Current Status**: Check [CURRENT_STATUS.md](CURRENT_STATUS.md) for system health and progress.
+> **🚀 Quick Start**: See [STARTUP_INSTRUCTIONS.md](STARTUP_INSTRUCTIONS.md) to initialize the distributed storage nodes!  
+> **📊 Current Status**: Check [CURRENT_STATUS.md](CURRENT_STATUS.md) for platform health and operational progress.
 
 ---
 
 ## 🎯 Quick Links
 
-- **[🚀 Startup Instructions](STARTUP_INSTRUCTIONS.md)** - Fix "No distributed nodes available" warning
-- **[📊 Current Status](CURRENT_STATUS.md)** - System health and what's working
-- **[✅ Integration Complete](INTEGRATION_COMPLETE.md)** - Technical integration details
-- **[🔧 Test System](../test-system.ps1)** - Run health checks
-- **[⚡ Start Nodes](start-nodes.ps1)** - Auto-start storage nodes
-
+- **[🚀 Startup Instructions](STARTUP_INSTRUCTIONS.md)** – Resolve distributed node availability issues  
+- **[📊 Current Status](CURRENT_STATUS.md)** – Monitor system health and active services  
+- **[✅ Integration Complete](INTEGRATION_COMPLETE.md)** – Architecture and integration overview  
+- **[🔧 Test System](../test-system.ps1)** – Execute system diagnostics  
+- **[⚡ Start Nodes](start-nodes.ps1)** – Automatically launch agricultural data nodes  
 ---
 
 ## 📑 Table of Contents  
 
 1. [Introduction](#1-introduction)  
 2. [Problem Description](#2-problem-description)  
-   - [Housing Crisis in African Universities](#21-housing-crisis-in-african-universities)  
-   - [Pain Points Experienced by Students](#22-pain-points-experienced-by-students)  
+   - [Agricultural Challenges in Africa](#21-agricultural-challenges-in-africa)  
+   - [Pain Points Faced by Farmers](#22-pain-points-faced-by-farmers)  
    - [Socio-Economic Impact](#23-socio-economic-impact)  
 3. [Problem Scope](#3-problem-scope)  
 4. [Solution Proposal](#4-solution-proposal)  
 5. [System Design](#5-system-design)  
-   - [High Level Architecture](#51-high-level-architecture)  
+   - [High-Level Architecture](#51-high-level-architecture)  
    - [Architecture Diagram](#52-architecture-diagram)  
    - [Distributed Features](#53-distributed-features)  
-6. [How Distributed Systems Help](#6-how-distributed-systems-help)  
-7. [How Cloud Computing Helps](#7-how-cloud-computing-helps)  
-8. [CAP Theorem in MyCloud](#8-cap-theorem-in-MyCloud)  
+6. [Role of Distributed Systems](#6-role-of-distributed-systems)  
+7. [Contribution of Cloud Computing](#7-contribution-of-cloud-computing)  
+8. [CAP Theorem in MyCloud](#8-cap-theorem-in-mycloud)  
 9. [Proposed Technologies](#9-proposed-technologies)  
-10. [Calendar of Activities](#10-calendar-of-activities)  
-11. [Expected Results](#11-expected-results)  
+10. [Project Timeline](#10-project-timeline)  
+11. [Expected Outcomes](#11-expected-outcomes)  
 12. [Conclusion](#12-conclusion)  
 
 ---
