@@ -39,72 +39,72 @@
 
 ## 1. Introduction  
 
-Student housing has become one of the most urgent challenges on the African continent. It is directly linked to academic performance, financial stability, and student well-being. With rapidly growing enrollment in universities, accommodation facilities have failed to keep pace.  
+Agriculture remains the backbone of many African economies, yet it faces persistent challenges related to data fragmentation, limited access to information, and poor coordination between stakeholders. Small-scale farmers, cooperatives, and agricultural institutions often operate in isolation, relying on manual record-keeping and informal communication channels.  
 
-- **Student Hostels** are overcrowded, chooked up and deteriorating.  
-- **Private rentals** are expensive and often poorly regulated.  
-- **Students** are forced into unstable and unsafe ad-hoc arrangements.  
+- **Farm data** is scattered and poorly preserved.  
+- **Market and weather information** is often delayed or unreliable.  
+- **Farmers** lack digital tools for collaboration and decision-making.  
 
-**MyCloud** is a distributed, cloud-based system designed to tackle this challenge. Unlike simple rental applications that just display listings, MyCloud emphasizes **affordability, roommate compatibility, and collaboration**. Students not only find housing but also:  
+**MyCloud** is a distributed, cloud-based platform designed to address these challenges. Rather than acting as a simple data repository, MyCloud emphasizes **data sharing, collaboration, resilience, and scalability** across the agricultural ecosystem. The system enables stakeholders to:  
 
-- Match with compatible roommates.  
-- Share contracts, receipts, and bills.  
-- Collaborate in managing their shared living.  
+- Store and access farm records (yields, inputs, soil data).  
+- Share market prices, weather reports, and best practices.  
+- Collaborate across farms, cooperatives, and agricultural offices.  
 
-Technically, MyCloud is built as a **distributed systems simulation** with a **Virtual Controller** managing multiple **Nodes** (students, landlords, or housing offices). Housing data and roommate profiles are **replicated** across nodes for **fault tolerance and availability**, while **cloud computing principles** allow the service to scale elastically as more users join.  
+From a technical perspective, MyCloud is implemented as a **distributed systems simulation** managed by a **Virtual Controller** coordinating multiple **Nodes** (farmers, cooperatives, research centers, and agricultural authorities). Agricultural data is **replicated across nodes** to ensure **availability and fault tolerance**, while **cloud computing principles** enable elastic scaling as participation grows.  
 
 ---
 
 ## 2. Problem Description  
 
-### 2.1 Housing Crisis in African Universities  
+### 2.1 Agricultural Challenges in Africa  
 
-Statitics shows African universities have doubled or tripled their enrollments in the past 20 years, yet accomodation of students supply has stagnated.  
+Despite employing a large portion of the population, African agriculture remains largely under-digitized. Productivity growth is slow due to limited access to reliable information and infrastructure.  
 
-- **Nigeria:** Statistics shows estimated demand of **1.8 million beds**; supply is fewer than **500,000**.  
-- **Cameroon:** Overcrowding is common, with **6–8 students sharing a room built for 2**.  
-- **Kenya:** Students in Nairobi commute long distances because nearby housing is insufficient.  
-- **South Africa:** Despite significant investment, student protests highlight persistent housing shortages.  
+- **Cameroon:** Smallholder farmers rely heavily on manual records and informal advice.  
+- **Nigeria:** Market price volatility causes losses due to lack of real-time data.  
+- **Kenya:** Weather variability impacts yields, yet forecasting access is limited.  
+- **Ghana:** Weak coordination between farmers and extension services reduces efficiency.  
 
-### 2.2 Pain Points Experienced by Students  
+### 2.2 Pain Points Faced by Farmers  
 
-1. **Affordability**  
-   Renting alone is almost impossible for low-income students. Many need roommates to share costs.  
+1. **Data Fragmentation**  
+   Farm records are kept on paper or isolated devices, making analysis and sharing difficult.  
 
-2. **Fragmented Information**  
-   Housing opportunities are advertised via posters, word of mouth, or scattered WhatsApp groups.  
+2. **Limited Market Access**  
+   Farmers struggle to access up-to-date pricing and demand information.  
 
-3. **Roommate Problems**  
-   Students lack structured systems for finding compatible roommates, leading to conflict, instability, and even violence.  
+3. **Lack of Collaboration**  
+   There are few structured platforms for farmers to share experiences, inputs, or resources.  
 
 4. **Unreliable Infrastructure**  
-   Frequent blackouts and poor connectivity cause loss of data and disrupt access to housing information.  
+   Power outages and unstable connectivity disrupt access to agricultural data systems.  
 
-5. **Scams**  
-   Fake landlords exploit desperate students by demanding deposits for non-existent houses.  
+5. **Information Asymmetry and Exploitation**  
+   Middlemen exploit farmers due to lack of transparent information. 
 
 ### 2.3 Socio-Economic Impact  
 
-- **Academic decline:** Students perform poorly or drop out due to unstable living conditions.  
-- **Financial stress:** Families struggle with rising rents.  
-- **Community impact:** Informal, unsafe housing contributes to crime and poor health.  
+- **Low productivity:** Inefficient farming practices persist.  
+- **Income instability:** Farmers receive unfair prices for produce.  
+- **Food insecurity:** Poor coordination affects supply chains and availability.  
 
 ---
 
 ## 3. Problem Scope  
 
-MyCloud directly addresses **student housing around African universities**, focusing on:  
+MyCloud focuses on **agricultural data management and collaboration**, targeting:  
 
-- Students seeking affordable rooms.  
-- Landlords posting available housing.  
-- Roommate matching for shared costs.  
-- Collaboration in managing shared housing.  
-- Distributed design for scalability and fault tolerance.  
+- Small and medium-scale farmers.  
+- Agricultural cooperatives and associations.  
+- Extension services and research institutions.  
+- Distributed data storage for resilience and growth.  
 
-**Boundaries:**  
-- MyCloud does not solve the national housing crisis.  
-- Focus is limited to **university towns**.  
-- Starts as a **simulation project**, with potential for real-world deployment.  
+**Limitations:**  
+- MyCloud does not replace national agricultural policy.  
+- Initial deployment focuses on **regional farming communities**.  
+- The system begins as a **simulation platform** with future production potential.  
+
 
 ---
 
