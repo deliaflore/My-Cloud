@@ -1,165 +1,165 @@
-# MyCloud – Distributed Student Housing and Roommate Matching System  
+# MyCloud – Distributed Agricultural Data and Resource Management System  
 
-> **🚀 Quick Start**: See [STARTUP_INSTRUCTIONS.md](STARTUP_INSTRUCTIONS.md) to get the distributed storage working!  
-> **📊 Current Status**: Check [CURRENT_STATUS.md](CURRENT_STATUS.md) for system health and progress.
+> **🚀 Quick Start**: See [STARTUP_INSTRUCTIONS.md](STARTUP_INSTRUCTIONS.md) to initialize the distributed storage nodes!  
+> **📊 Current Status**: Check [CURRENT_STATUS.md](CURRENT_STATUS.md) for platform health and operational progress.
 
 ---
 
 ## 🎯 Quick Links
 
-- **[🚀 Startup Instructions](STARTUP_INSTRUCTIONS.md)** - Fix "No distributed nodes available" warning
-- **[📊 Current Status](CURRENT_STATUS.md)** - System health and what's working
-- **[✅ Integration Complete](INTEGRATION_COMPLETE.md)** - Technical integration details
-- **[🔧 Test System](../test-system.ps1)** - Run health checks
-- **[⚡ Start Nodes](start-nodes.ps1)** - Auto-start storage nodes
-
+- **[🚀 Startup Instructions](STARTUP_INSTRUCTIONS.md)** – Resolve distributed node availability issues  
+- **[📊 Current Status](CURRENT_STATUS.md)** – Monitor system health and active services  
+- **[✅ Integration Complete](INTEGRATION_COMPLETE.md)** – Architecture and integration overview  
+- **[🔧 Test System](../test-system.ps1)** – Execute system diagnostics  
+- **[⚡ Start Nodes](start-nodes.ps1)** – Automatically launch agricultural data nodes  
 ---
 
 ## 📑 Table of Contents  
 
 1. [Introduction](#1-introduction)  
 2. [Problem Description](#2-problem-description)  
-   - [Housing Crisis in African Universities](#21-housing-crisis-in-african-universities)  
-   - [Pain Points Experienced by Students](#22-pain-points-experienced-by-students)  
+   - [Agricultural Challenges in Africa](#21-agricultural-challenges-in-africa)  
+   - [Pain Points Faced by Farmers](#22-pain-points-faced-by-farmers)  
    - [Socio-Economic Impact](#23-socio-economic-impact)  
 3. [Problem Scope](#3-problem-scope)  
 4. [Solution Proposal](#4-solution-proposal)  
 5. [System Design](#5-system-design)  
-   - [High Level Architecture](#51-high-level-architecture)  
+   - [High-Level Architecture](#51-high-level-architecture)  
    - [Architecture Diagram](#52-architecture-diagram)  
    - [Distributed Features](#53-distributed-features)  
-6. [How Distributed Systems Help](#6-how-distributed-systems-help)  
-7. [How Cloud Computing Helps](#7-how-cloud-computing-helps)  
-8. [CAP Theorem in MyCloud](#8-cap-theorem-in-MyCloud)  
+6. [Role of Distributed Systems](#6-role-of-distributed-systems)  
+7. [Contribution of Cloud Computing](#7-contribution-of-cloud-computing)  
+8. [CAP Theorem in MyCloud](#8-cap-theorem-in-mycloud)  
 9. [Proposed Technologies](#9-proposed-technologies)  
-10. [Calendar of Activities](#10-calendar-of-activities)  
-11. [Expected Results](#11-expected-results)  
+10. [Project Timeline](#10-project-timeline)  
+11. [Expected Outcomes](#11-expected-outcomes)  
 12. [Conclusion](#12-conclusion)  
 
 ---
 
 ## 1. Introduction  
 
-Student housing has become one of the most urgent challenges on the African continent. It is directly linked to academic performance, financial stability, and student well-being. With rapidly growing enrollment in universities, accommodation facilities have failed to keep pace.  
+Agriculture remains the backbone of many African economies, yet it faces persistent challenges related to data fragmentation, limited access to information, and poor coordination between stakeholders. Small-scale farmers, cooperatives, and agricultural institutions often operate in isolation, relying on manual record-keeping and informal communication channels.  
 
-- **Student Hostels** are overcrowded, chooked up and deteriorating.  
-- **Private rentals** are expensive and often poorly regulated.  
-- **Students** are forced into unstable and unsafe ad-hoc arrangements.  
+- **Farm data** is scattered and poorly preserved.  
+- **Market and weather information** is often delayed or unreliable.  
+- **Farmers** lack digital tools for collaboration and decision-making.  
 
-**MyCloud** is a distributed, cloud-based system designed to tackle this challenge. Unlike simple rental applications that just display listings, MyCloud emphasizes **affordability, roommate compatibility, and collaboration**. Students not only find housing but also:  
+**MyCloud** is a distributed, cloud-based platform designed to address these challenges. Rather than acting as a simple data repository, MyCloud emphasizes **data sharing, collaboration, resilience, and scalability** across the agricultural ecosystem. The system enables stakeholders to:  
 
-- Match with compatible roommates.  
-- Share contracts, receipts, and bills.  
-- Collaborate in managing their shared living.  
+- Store and access farm records (yields, inputs, soil data).  
+- Share market prices, weather reports, and best practices.  
+- Collaborate across farms, cooperatives, and agricultural offices.  
 
-Technically, MyCloud is built as a **distributed systems simulation** with a **Virtual Controller** managing multiple **Nodes** (students, landlords, or housing offices). Housing data and roommate profiles are **replicated** across nodes for **fault tolerance and availability**, while **cloud computing principles** allow the service to scale elastically as more users join.  
+From a technical perspective, MyCloud is implemented as a **distributed systems simulation** managed by a **Virtual Controller** coordinating multiple **Nodes** (farmers, cooperatives, research centers, and agricultural authorities). Agricultural data is **replicated across nodes** to ensure **availability and fault tolerance**, while **cloud computing principles** enable elastic scaling as participation grows.  
 
 ---
 
 ## 2. Problem Description  
 
-### 2.1 Housing Crisis in African Universities  
+### 2.1 Agricultural Challenges in Africa  
 
-Statitics shows African universities have doubled or tripled their enrollments in the past 20 years, yet accomodation of students supply has stagnated.  
+Despite employing a large portion of the population, African agriculture remains largely under-digitized. Productivity growth is slow due to limited access to reliable information and infrastructure.  
 
-- **Nigeria:** Statistics shows estimated demand of **1.8 million beds**; supply is fewer than **500,000**.  
-- **Cameroon:** Overcrowding is common, with **6–8 students sharing a room built for 2**.  
-- **Kenya:** Students in Nairobi commute long distances because nearby housing is insufficient.  
-- **South Africa:** Despite significant investment, student protests highlight persistent housing shortages.  
+- **Cameroon:** Smallholder farmers rely heavily on manual records and informal advice.  
+- **Nigeria:** Market price volatility causes losses due to lack of real-time data.  
+- **Kenya:** Weather variability impacts yields, yet forecasting access is limited.  
+- **Ghana:** Weak coordination between farmers and extension services reduces efficiency.  
 
-### 2.2 Pain Points Experienced by Students  
+### 2.2 Pain Points Faced by Farmers  
 
-1. **Affordability**  
-   Renting alone is almost impossible for low-income students. Many need roommates to share costs.  
+1. **Data Fragmentation**  
+   Farm records are kept on paper or isolated devices, making analysis and sharing difficult.  
 
-2. **Fragmented Information**  
-   Housing opportunities are advertised via posters, word of mouth, or scattered WhatsApp groups.  
+2. **Limited Market Access**  
+   Farmers struggle to access up-to-date pricing and demand information.  
 
-3. **Roommate Problems**  
-   Students lack structured systems for finding compatible roommates, leading to conflict, instability, and even violence.  
+3. **Lack of Collaboration**  
+   There are few structured platforms for farmers to share experiences, inputs, or resources.  
 
 4. **Unreliable Infrastructure**  
-   Frequent blackouts and poor connectivity cause loss of data and disrupt access to housing information.  
+   Power outages and unstable connectivity disrupt access to agricultural data systems.  
 
-5. **Scams**  
-   Fake landlords exploit desperate students by demanding deposits for non-existent houses.  
+5. **Information Asymmetry and Exploitation**  
+   Middlemen exploit farmers due to lack of transparent information. 
 
 ### 2.3 Socio-Economic Impact  
 
-- **Academic decline:** Students perform poorly or drop out due to unstable living conditions.  
-- **Financial stress:** Families struggle with rising rents.  
-- **Community impact:** Informal, unsafe housing contributes to crime and poor health.  
+- **Low productivity:** Inefficient farming practices persist.  
+- **Income instability:** Farmers receive unfair prices for produce.  
+- **Food insecurity:** Poor coordination affects supply chains and availability.  
 
 ---
 
 ## 3. Problem Scope  
 
-MyCloud directly addresses **student housing around African universities**, focusing on:  
+MyCloud focuses on **agricultural data management and collaboration**, targeting:  
 
-- Students seeking affordable rooms.  
-- Landlords posting available housing.  
-- Roommate matching for shared costs.  
-- Collaboration in managing shared housing.  
-- Distributed design for scalability and fault tolerance.  
+- Small and medium-scale farmers.  
+- Agricultural cooperatives and associations.  
+- Extension services and research institutions.  
+- Distributed data storage for resilience and growth.  
 
-**Boundaries:**  
-- MyCloud does not solve the national housing crisis.  
-- Focus is limited to **university towns**.  
-- Starts as a **simulation project**, with potential for real-world deployment.  
+**Limitations:**  
+- MyCloud does not replace national agricultural policy.  
+- Initial deployment focuses on **regional farming communities**.  
+- The system begins as a **simulation platform** with future production potential.  
+
 
 ---
 
 ## 4. Solution Proposal  
 
-MyCloud provides a **scalable, fault-tolerant, and collaborative housing platform**.  
+MyCloud delivers a **scalable, resilient, and collaborative agricultural platform**.  
 
-**Key Features:**  
-- **Marketplace:** Central hub for listings.  
-- **Roommate Matching:** Profiles (budget, lifestyle, location, habits) used to suggest compatible roommates.  
-- **Collaboration Tools:** Groups share rental contracts, bills, and documents.  
-- **Distributed Architecture:** Controller + nodes with replication.  
-- **Cloud Deployment:** Elastic scaling to handle peak semester demand.  
+**Core Features:**  
+- **Agricultural Data Hub:** Centralized access to farm records and analytics.  
+- **Knowledge Sharing:** Exchange of farming techniques, weather data, and advisories.  
+- **Collaboration Tools:** Shared documents, reports, and cooperative planning.  
+- **Distributed Architecture:** Controller-node model with replicated storage.  
+- **Cloud Deployment:** Elastic resource allocation during peak farming seasons.  
 
 ---
 
-## 5. System Design
- System Diagrams will be provided later, placeholders inserted as replacement
-The architecture of MyCloud is intentionally modeled as a distributed system with a central **Virtual Controller** and multiple **Nodes** representing students, landlords, and university housing offices. The design prioritizes **scalability, fault tolerance, and collaboration**, which are essental requirements of distributed systems and cloud computing.  
+## 5. System Design  
+
+System diagrams will be added in later stages; placeholders are included.  
+MyCloud is architected as a distributed system with a central **Virtual Controller** coordinating multiple **Agricultural Nodes**. The design prioritizes **scalability, fault tolerance, and cooperative data sharing**, aligning with distributed systems and cloud computing principles.  
 
 ### 5.1 High-Level Architecture  
 
-The architecture can be visualized in three main layers:  
+The system is structured into three layers:  
 
-1. **Controller Layer (Virtual Controller)**  
-   - Acts as the central coordinator.  
-   - Manages node registration, communication, replication, and consistency.  
-   - Logs activities (e.g., node connected, file uploaded, roommate matched).  
+1. **Controller Layer**  
+   - Coordinates node registration and communication.  
+   - Manages replication, synchronization, and consistency.  
+   - Logs agricultural events (data uploads, updates, alerts).  
 
 2. **Node Layer**  
-   - Represents individual entities:  
-     - **Student Nodes** → search housing, create roommate profiles, upload contracts.  
-     - **Landlord Nodes** → upload listings, documents, rental details.  
-     - **University Housing Nodes** → act as trusted verification bodies.  
-   - Each node maintains local state and communicates with the controller.  
+   - Represents participants:  
+     - **Farmer Nodes** → upload crop data, yields, and input usage.  
+     - **Cooperative Nodes** → aggregate data and manage shared resources.  
+     - **Agricultural Authority Nodes** → validate and analyze data.  
+   - Each node maintains local storage and syncs with the controller.  
 
-3. **Collaboration & API Layer**  
-   - Handles file sharing, roommate group collaboration, notifications.  
-   - Provides REST/gRPC APIs for integration with web dashboards or mobile apps.  
+3. **API & Collaboration Layer**  
+   - Supports dashboards, alerts, and shared workflows.  
+   - Exposes REST/gRPC APIs for web and mobile access.  
 
 ---
 
-### 5.2  Architecture Diagram  
+### 5.2 Architecture Diagram  
 
 ```mermaid
 graph TD
-    A[Virtual Controller] -->|Replication| B(Student Node 1)
-    A -->|Replication| C(Student Node 2)
-    A -->|Replication| D(Landlord Node)
-    A -->|Replication| E(University Node)
-    B -->|Upload Contract| A
-    C -->|Download Contract| A
-    D -->|Post Listing| A
-    E -->|Verify Listing| A
+    A[Virtual Controller] -->|Replication| B(Farmer Node 1)
+    A -->|Replication| C(Farmer Node 2)
+    A -->|Replication| D(Cooperative Node)
+    A -->|Replication| E(Agricultural Authority Node)
+    B -->|Upload Farm Data| A
+    C -->|Retrieve Reports| A
+    D -->|Aggregate Data| A
+    E -->|Validate & Analyze| A
 ```
 
 ### 5.3 Distributed Features  
