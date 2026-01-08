@@ -352,128 +352,116 @@ Cloud computing empowers MyCloud Agriculture to:
 Together with distributed systems, cloud computing ensures MyCloud Agriculture is a **practical, scalable, and collaborative platform** transforming African agriculture.
 
 ---
+## 8. CAP Theorem in MyCloud Agriculture  
 
-## 8. CAP Theorem in MyCloud  
+The CAP theorem is a fundamental principle in distributed systems. It states that in the presence of a network partition, a distributed system can guarantee only two out of three: Consistency, Availability, and Partition Tolerance.
 
-The CAP theorem is a fundamental principle in distributed systems. It states that in the presence of a network partition, a distributed system can only guarantee two out of three: Consistency, Availability, and Partition Tolerance.
-
-MyCloud is designed with Africa’s unreliable infrastructure in mind, and therefore prioritizes Availability and Partition Tolerance (AP) over strict Consistency.
+MyCloud Agriculture is designed for Africa’s rural and semi-urban farming regions, where network reliability may be limited. Therefore, the system prioritizes **Availability and Partition Tolerance (AP)** over strict Consistency.
 
 ### 8.1 Consistency
 
-Definition: All nodes should see the same data at the same time.
+**Definition:** All nodes should see the same data at the same time.  
 
-MyCloud Approach: MyCloud uses eventual consistency. For example, if a landlord uploads a listing in Yaoundé, it may take a short delay before it appears on nodes in Douala or Nairobi.
+**MyCloud Approach:** MyCloud Agriculture uses eventual consistency. For example, if a farmer uploads harvest data in Adamawa, it may take a short delay before appearing on nodes in Douala or Yaoundé.  
 
-Reason: This delay is acceptable because students care more about system availability than instant synchronization.
+**Reason:** Slight delays are acceptable because farmers prioritize system availability for market decisions and field operations.
 
 ### 8.2 Availability
 
-Definition: Every request should always receive a valid response.
+**Definition:** Every request should always receive a valid response.  
 
-MyCloud Approach: Even during partial system failures, MyCloud ensures that students can still:
+**MyCloud Approach:** Even during partial failures, farmers can:
 
-View cached listings.
+- View cached crop schedules and market prices.  
+- Access cooperative reports.  
+- Upload local data (synchronized later).  
 
-Access roommate profiles.
-
-Perform local file uploads (synced later).
-
-Example: If a replication node goes offline, students still get responses from remaining active nodes.
+**Example:** If a replication node goes offline during planting season, farmers still get responses from remaining active nodes.
 
 ### 8.3 Partition Tolerance
 
-Definition: The system continues to function despite communication breakdowns between nodes.
+**Definition:** The system continues to operate despite communication breakdowns between nodes.  
 
-MyCloud Approach: Nodes are designed to work offline and synchronize later.
+**MyCloud Approach:** Nodes work offline and synchronize automatically when connectivity returns.  
 
-Example: If internet outages occur in one campus, students can still use cached data and upload files. Once connectivity is restored, the system synchronizes data with other campuses.
+**Example:** During internet outages in rural farms, farmers can continue recording crop activities or uploading soil tests, with synchronization occurring later.
 
 ### 8.4 Trade-Off Justification
 
-MyCloud chooses AP (Availability + Partition Tolerance):
+MyCloud Agriculture chooses **AP (Availability + Partition Tolerance):**
 
-Why not CA? Strict consistency with availability is impossible under frequent African outages.
-
-Why not CP? Sacrificing availability would frustrate students when they need urgent housing data.
-
-Why AP? It ensures resilience, even if data takes a few minutes to synchronize.
+- **Why not CA?** Strict consistency with availability is impractical under frequent African rural network outages.  
+- **Why not CP?** Sacrificing availability would frustrate farmers needing timely market or agricultural data.  
+- **Why AP?** Ensures resilience, allowing critical agricultural operations to continue uninterrupted.
 
 ---
 
 ## 9. Proposed Technologies  
 
-MyCloud integrates modern technologies to demonstrate the simulation while remaining adaptable for real-world deployment.
+MyCloud Agriculture integrates modern technologies to support real-world agricultural operations, while remaining deployable in African rural contexts.
 
 ### 9.1 Backend
 
-Language & Framework: Java (Spring Boot) for robust service-oriented development.
-
-Communication: gRPC for high-performance RPCs between nodes and controller.
-
-Database: PostgreSQL for relational data (housing listings, roommate profiles).
+- **Language & Framework:** Java (Spring Boot) for robust, service-oriented development.  
+- **Communication:** gRPC for high-performance RPCs between farm nodes and central controllers.  
+- **Database:** PostgreSQL for relational data (farm records, crop inventories, market prices, cooperative reports).  
 
 ### 9.2 Frontend
 
-React.js Dashboard: User-friendly portal for students, landlords, and housing offices.
-
-Mobile-Friendly: Lightweight, responsive design for low-bandwidth African contexts.
+- **React.js Dashboard:** User-friendly interface for farmers, cooperatives, and agricultural officers.  
+- **Mobile-Friendly:** Lightweight and responsive design suitable for low-bandwidth rural environments.  
 
 ### 9.3 Storage
 
-Local FS (Simulation): For testing file sharing and replication.
-
-Cloud Storage (Extension): AWS S3 or Azure Blob for large-scale deployments with redundancy.
+- **Local File System (Simulation):** For testing farm data uploads and replication.  
+- **Cloud Storage (Extension):** AWS S3 or Azure Blob for large-scale deployments with redundancy.  
 
 ### 9.4 Deployment & Infrastructure
 
-Docker: Containers for portability.
-
-Kubernetes: Scaling and orchestration (future upgrade).
-
-CI/CD Pipelines: GitHub Actions for testing and deployment automation.
+- **Docker:** Ensures portability across local and cloud servers.  
+- **Kubernetes:** Future scaling and orchestration.  
+- **CI/CD Pipelines:** GitHub Actions for automated testing and deployment.
 
 ### 9.5 Security Tools
 
-JWT Authentication: Secure communication between nodes.
-
-SSL/TLS Encryption: Protects housing data.
-
-Identity Verification: Integrates university housing nodes as trusted verifiers.
+- **JWT Authentication:** Secure communication between nodes.  
+- **SSL/TLS Encryption:** Protects farm and financial data.  
+- **Identity Verification:** Agricultural offices or cooperatives act as trusted validators.
 
 ---
+
 ## 10. Calendar of Activities  
 
 | Week | Task | Deliverable |  
 |------|------|-------------|  
-| 1 | Requirements gathering | Requirements spec doc |  
-| 2 | Architecture design | System diagrams |  
-| 3–4 | Node registration + file sharing | Prototype |  
-| 5 | Replication & fault tolerance | Resilient storage |  
-| 6 | Roommate matching | Matching algorithm |  
-| 7 | Collaboration tools | Group workspace |  
+| 1 | Requirements gathering | Agricultural requirements specification document |  
+| 2 | Architecture design | System diagrams for farm nodes and cloud deployment |  
+| 3–4 | Node registration + farm data sharing | Prototype of distributed farm network |  
+| 5 | Replication & fault tolerance | Resilient farm data storage |  
+| 6 | Crop tracking & market integration | Crop and market data API |  
+| 7 | Collaboration tools | Shared farm workspace and notifications |  
 | 8 | API/dashboard integration | REST/gRPC endpoints |  
-| 9 | Testing & debugging | Test report |  
+| 9 | Testing & debugging | Test report for farm data operations |  
 | 10 | Deployment + documentation | GitHub repo + final report |  
 
 ---
 
 ## 11. Expected Results  
 
-- Affordable student housing through shared rentals.  
-- Reliable access to listings and roommate profiles.  
-- Fault-tolerant, distributed housing storage.  
-- Scalable platform covering multiple campuses.  
-- Digital collaboration for students managing shared housing.  
+- **Efficient farm management:** Farmers can track crops, harvest schedules, and storage in real time.  
+- **Reliable access to market data:** Prices, demand trends, and cooperative updates available even during network outages.  
+- **Fault-tolerant, distributed agricultural storage:** Ensures critical farm data remains accessible.  
+- **Scalable platform covering multiple regions:** Supports smallholders to large cooperatives.  
+- **Digital collaboration:** Farmers, cooperatives, and officers can share crop reports, soil tests, and market analytics.  
 
 ---
 
 ## 12. Conclusion  
 
-MyCloud tackles the **real-world African problem of unaffordable student housing and lack of structured roommate matching**. Unlike solutions that only display listings, MyCloud enables affordability through roommate compatibility and collaboration.  
+MyCloud Agriculture addresses the **real-world African problem of inefficient farm management, delayed market access, and lack of collaborative tools for smallholder farmers**.  
 
-By applying **distributed systems concepts** (replication, scalability, fault tolerance) and **cloud computing** (elasticity, SaaS models, hybrid deployments), MyCloud creates a **resilient, scalable, and collaborative platform**.  
+By applying **distributed systems concepts** (replication, fault tolerance, scalability) and **cloud computing** (elasticity, hybrid deployment, SaaS models), MyCloud Agriculture provides a **resilient, scalable, and collaborative platform**.  
 
-MyCloud demonstrates how technology can **reduce costs, stabilize student communities, and strengthen academic success** — an African problem solved with distributed systems and cloud computing.  
+It demonstrates how technology can **increase agricultural productivity, improve farmer incomes, and strengthen food security**—an African agricultural problem effectively solved through distributed systems and cloud computing.
 
 ---
