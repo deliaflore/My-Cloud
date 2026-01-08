@@ -110,55 +110,56 @@ MyCloud focuses on **agricultural data management and collaboration**, targeting
 
 ## 4. Solution Proposal  
 
-MyCloud provides a **scalable, fault-tolerant, and collaborative housing platform**.  
+MyCloud delivers a **scalable, resilient, and collaborative agricultural platform**.  
 
-**Key Features:**  
-- **Marketplace:** Central hub for listings.  
-- **Roommate Matching:** Profiles (budget, lifestyle, location, habits) used to suggest compatible roommates.  
-- **Collaboration Tools:** Groups share rental contracts, bills, and documents.  
-- **Distributed Architecture:** Controller + nodes with replication.  
-- **Cloud Deployment:** Elastic scaling to handle peak semester demand.  
+**Core Features:**  
+- **Agricultural Data Hub:** Centralized access to farm records and analytics.  
+- **Knowledge Sharing:** Exchange of farming techniques, weather data, and advisories.  
+- **Collaboration Tools:** Shared documents, reports, and cooperative planning.  
+- **Distributed Architecture:** Controller-node model with replicated storage.  
+- **Cloud Deployment:** Elastic resource allocation during peak farming seasons.  
 
 ---
 
-## 5. System Design
- System Diagrams will be provided later, placeholders inserted as replacement
-The architecture of MyCloud is intentionally modeled as a distributed system with a central **Virtual Controller** and multiple **Nodes** representing students, landlords, and university housing offices. The design prioritizes **scalability, fault tolerance, and collaboration**, which are essental requirements of distributed systems and cloud computing.  
+## 5. System Design  
+
+System diagrams will be added in later stages; placeholders are included.  
+MyCloud is architected as a distributed system with a central **Virtual Controller** coordinating multiple **Agricultural Nodes**. The design prioritizes **scalability, fault tolerance, and cooperative data sharing**, aligning with distributed systems and cloud computing principles.  
 
 ### 5.1 High-Level Architecture  
 
-The architecture can be visualized in three main layers:  
+The system is structured into three layers:  
 
-1. **Controller Layer (Virtual Controller)**  
-   - Acts as the central coordinator.  
-   - Manages node registration, communication, replication, and consistency.  
-   - Logs activities (e.g., node connected, file uploaded, roommate matched).  
+1. **Controller Layer**  
+   - Coordinates node registration and communication.  
+   - Manages replication, synchronization, and consistency.  
+   - Logs agricultural events (data uploads, updates, alerts).  
 
 2. **Node Layer**  
-   - Represents individual entities:  
-     - **Student Nodes** → search housing, create roommate profiles, upload contracts.  
-     - **Landlord Nodes** → upload listings, documents, rental details.  
-     - **University Housing Nodes** → act as trusted verification bodies.  
-   - Each node maintains local state and communicates with the controller.  
+   - Represents participants:  
+     - **Farmer Nodes** → upload crop data, yields, and input usage.  
+     - **Cooperative Nodes** → aggregate data and manage shared resources.  
+     - **Agricultural Authority Nodes** → validate and analyze data.  
+   - Each node maintains local storage and syncs with the controller.  
 
-3. **Collaboration & API Layer**  
-   - Handles file sharing, roommate group collaboration, notifications.  
-   - Provides REST/gRPC APIs for integration with web dashboards or mobile apps.  
+3. **API & Collaboration Layer**  
+   - Supports dashboards, alerts, and shared workflows.  
+   - Exposes REST/gRPC APIs for web and mobile access.  
 
 ---
 
-### 5.2  Architecture Diagram  
+### 5.2 Architecture Diagram  
 
 ```mermaid
 graph TD
-    A[Virtual Controller] -->|Replication| B(Student Node 1)
-    A -->|Replication| C(Student Node 2)
-    A -->|Replication| D(Landlord Node)
-    A -->|Replication| E(University Node)
-    B -->|Upload Contract| A
-    C -->|Download Contract| A
-    D -->|Post Listing| A
-    E -->|Verify Listing| A
+    A[Virtual Controller] -->|Replication| B(Farmer Node 1)
+    A -->|Replication| C(Farmer Node 2)
+    A -->|Replication| D(Cooperative Node)
+    A -->|Replication| E(Agricultural Authority Node)
+    B -->|Upload Farm Data| A
+    C -->|Retrieve Reports| A
+    D -->|Aggregate Data| A
+    E -->|Validate & Analyze| A
 ```
 
 ### 5.3 Distributed Features  
