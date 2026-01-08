@@ -1,0 +1,84 @@
+08:27:20.279 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ??????????????????????????????????????????????????????????
+08:27:20.296 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  ENHANCED STORAGE NODE INITIALIZATION                  ?
+08:27:20.296 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ??????????????????????????????????????????????????????????
+08:27:20.312 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  Node ID: node1767857238063                                                           ?
+08:27:20.319 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ??????????????????????????????????????????????????????????
+08:27:20.319 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ? Step 1: Assigning network interface...
+08:27:20.341 [main] INFO org.distributed.stumatchdistributed.network.NetworkInterfaceManager -- ? Network interface assigned to node1767857238063
+08:27:20.344 [main] INFO org.distributed.stumatchdistributed.network.NetworkInterfaceManager --    IP Address: 192.168.100.10
+08:27:20.344 [main] INFO org.distributed.stumatchdistributed.network.NetworkInterfaceManager --    MAC Address: 02:00:00:00:00:0A
+08:27:20.344 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ? IP Address: 192.168.100.10
+08:27:20.344 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ? MAC Address: 02:00:00:00:00:0A
+08:27:20.344 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ? Step 2: Creating virtual disk...
+08:27:20.363 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- ? Creating REAL virtual disk with 5368709120 bytes allocated...
+08:27:20.371 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- ? Virtual disk file created with REAL 5 GB allocated on disk
+08:27:20.373 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk --    File: C:\Users\bnyam\distributed-storage\disks\node1767857238063-disk.vdisk
+08:27:20.374 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk --    This is REAL storage allocation (not sparse) - as required!
+08:27:20.376 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- ? Disk file created: C:\Users\bnyam\distributed-storage\disks\node1767857238063-disk.vdisk
+08:27:20.377 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- ? Virtual Disk Created: node1767857238063-disk
+08:27:20.377 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk --    Size: 5 GB
+08:27:20.377 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk --    Location: C:\Users\bnyam\distributed-storage\disks\node1767857238063-disk.vdisk
+08:27:20.377 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ? Virtual Disk: 5 GB
+08:27:20.378 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ? Formatting virtual disk...
+08:27:20.378 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- ? Formatting disk: node1767857238063-disk
+08:27:20.381 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- ? Disk formatted successfully: node1767857238063-disk
+08:27:20.381 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- ? Disk mounted: node1767857238063-disk
+08:27:20.381 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ? Disk mounted
+08:27:20.381 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ? Step 3: Initializing lifecycle manager...
+08:27:20.394 [main] INFO org.distributed.stumatchdistributed.node.NodeLifecycleManager -- ? Node Lifecycle Manager created for: node1767857238063
+08:27:20.394 [main] INFO org.distributed.stumatchdistributed.node.NodeLifecycleManager --    State: CREATED
+08:27:20.394 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ? Lifecycle manager ready
+08:27:20.394 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ??  Step 4: Initializing process manager...
+08:27:20.394 [main] INFO org.distributed.stumatchdistributed.process.ProcessManager -- ? Process Manager initialized for: node1767857238063
+08:27:20.394 [main] INFO org.distributed.stumatchdistributed.process.ProcessManager --    Max concurrent processes: 4
+08:27:20.396 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ? Process manager ready (4 cores)
+08:27:20.396 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ??????????????????????????????????????????????????????????
+08:27:20.396 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  ? NODE INITIALIZATION COMPLETE                       ?
+08:27:20.396 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ??????????????????????????????????????????????????????????
+08:27:20.396 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  Node ID:     node1767857238063                                                 ?
+08:27:20.396 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  IP Address:  192.168.100.10                                              ?
+08:27:20.396 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  Port:        50051                                ?
+08:27:20.396 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  Storage:     5 GB (Virtual Disk)                 ?
+08:27:20.396 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  RAM:         8 GB                                  ?
+08:27:20.396 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  CPU Cores:   4                                     ?
+08:27:20.398 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  Status:      READY                                   ?
+08:27:20.398 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ??????????????????????????????????????????????????????????
+08:27:20.398 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ? Starting node: node1767857238063
+08:27:20.398 [main] INFO org.distributed.stumatchdistributed.node.NodeLifecycleManager -- ? Activating node: node1767857238063
+08:27:20.398 [main] INFO org.distributed.stumatchdistributed.node.NodeLifecycleManager -- ? Node node1767857238063 state change: CREATED ? READY
+08:27:20.420 [main] INFO org.distributed.stumatchdistributed.node.NodeLifecycleManager -- ? Node activated: node1767857238063
+08:27:20.425 [main] INFO org.distributed.stumatchdistributed.process.ProcessManager -- ??  Process scheduler started for: node1767857238063
+08:27:21.433 [node1767857238063-worker-0] INFO org.distributed.stumatchdistributed.node.NodeLifecycleManager -- ? Node node1767857238063 state change: READY ? WAITING
+08:27:23.209 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ??????????????????????????????????????????????????????????
+08:27:23.209 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  ? NODE STARTED SUCCESSFULLY                          ?
+08:27:23.209 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ??????????????????????????????????????????????????????????
+08:27:23.211 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  Node ID:     node1767857238063                                                 ?
+08:27:23.211 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  IP:Port:     192.168.100.10           :50051                 ?
+08:27:23.211 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  State:       WAITING (Ready for requests)            ?
+08:27:23.213 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  Disk:        MOUNTED                                 ?
+08:27:23.213 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ??????????????????????????????????????????????????????????
+08:27:46.298 [grpc-default-executor-0] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?????????????????????????????????????????????????????????
+08:27:46.298 [grpc-default-executor-0] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  ? INCOMING CHUNK STORAGE REQUEST                    ?
+08:27:46.298 [grpc-default-executor-0] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?????????????????????????????????????????????????????????
+08:27:46.302 [grpc-default-executor-0] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  Node:      node1767857238063                                                      ?
+08:27:46.305 [grpc-default-executor-0] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  Chunk ID:  c3bb82cd-05ea-44b1-8476-d46cf4997c6a_chunk_0                     ?
+08:27:46.309 [grpc-default-executor-0] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  Size:      267.42 KB                              ?
+08:27:46.316 [grpc-default-executor-0] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?????????????????????????????????????????????????????????
+08:27:46.330 [grpc-default-executor-0] INFO org.distributed.stumatchdistributed.process.ProcessManager -- ? Process submitted: StoreChunk-c3bb82cd-05ea-44b1-8476-d46cf4997c6a_chunk_0 (PID: 1767857266512)
+08:27:46.333 [grpc-default-executor-0] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ? Process submitted (PID: 1767857266512)
+08:27:46.453 [pool-2-thread-1] INFO org.distributed.stumatchdistributed.process.ProcessManager -- ??  Executing process: StoreChunk-c3bb82cd-05ea-44b1-8476-d46cf4997c6a_chunk_0 (PID: 1767857266512)
+08:27:46.454 [pool-2-thread-1] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ? Transferring... [          ]   0%
+08:27:46.455 [pool-2-thread-1] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ? Transferring... [??        ]  25%
+08:27:46.475 [pool-2-thread-1] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ? Transferring... [????      ]  50%
+08:27:46.490 [pool-2-thread-1] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ? Transferring... [???????   ]  75%
+08:27:46.499 [pool-2-thread-1] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ? Transferring... [??????????] 100%
+08:27:46.668 [pool-2-thread-1] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- ? File written to disk: c3bb82cd-05ea-44b1-8476-d46cf4997c6a_chunk_0 (273837 bytes)
+08:27:46.670 [pool-2-thread-1] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?????????????????????????????????????????????????????????
+08:27:46.670 [pool-2-thread-1] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  ? CHUNK STORED SUCCESSFULLY                         ?
+08:27:46.670 [pool-2-thread-1] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?????????????????????????????????????????????????????????
+08:27:46.670 [pool-2-thread-1] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  Chunk ID:    c3bb82cd-05ea-44b1-8476-d46cf4997c6a_chunk_0                   ?
+08:27:46.674 [pool-2-thread-1] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  Duration:    -2 ms                         ?
+08:27:46.678 [pool-2-thread-1] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  Disk Used:   0/5 GB                  ?
+08:27:46.678 [pool-2-thread-1] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  Files:       2                                  ?
+08:27:46.678 [pool-2-thread-1] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?????????????????????????????????????????????????????????
+08:27:46.734 [pool-2-thread-1] INFO org.distributed.stumatchdistributed.process.ProcessManager -- ? Process completed: StoreChunk-c3bb82cd-05ea-44b1-8476-d46cf4997c6a_chunk_0 (PID: 1767857266512)

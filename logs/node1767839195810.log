@@ -1,0 +1,23 @@
+03:26:57.709 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ??????????????????????????????????????????????????????????
+03:26:57.726 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  ENHANCED STORAGE NODE INITIALIZATION                  ?
+03:26:57.730 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ??????????????????????????????????????????????????????????
+03:26:57.743 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  Node ID: node1767839195810                                                           ?
+03:26:57.757 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ??????????????????????????????????????????????????????????
+03:26:57.758 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ? Step 1: Assigning network interface...
+03:26:57.787 [main] INFO org.distributed.stumatchdistributed.network.NetworkInterfaceManager -- ? Network interface assigned to node1767839195810
+03:26:57.794 [main] INFO org.distributed.stumatchdistributed.network.NetworkInterfaceManager --    IP Address: 192.168.100.10
+03:26:57.795 [main] INFO org.distributed.stumatchdistributed.network.NetworkInterfaceManager --    MAC Address: 02:00:00:00:00:0A
+03:26:57.796 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ? IP Address: 192.168.100.10
+03:26:57.797 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ? MAC Address: 02:00:00:00:00:0A
+03:26:57.798 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ? Step 2: Creating virtual disk...
+03:26:57.855 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- ? Using existing disk file: C:\Users\bnyam\distributed-storage\disks\node1767839195810-disk.vdisk
+03:26:57.936 [main] ERROR org.distributed.stumatchdistributed.node.EnhancedStorageNode -- Failed to start node
+java.io.StreamCorruptedException: invalid stream header: D15CD15C
+	at java.base/java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:963)
+	at java.base/java.io.ObjectInputStream.<init>(ObjectInputStream.java:397)
+	at org.distributed.stumatchdistributed.virtualdisk.VirtualDisk.loadMetadata(VirtualDisk.java:303)
+	at org.distributed.stumatchdistributed.virtualdisk.VirtualDisk.createDiskFile(VirtualDisk.java:116)
+	at org.distributed.stumatchdistributed.virtualdisk.VirtualDisk.<init>(VirtualDisk.java:66)
+	at org.distributed.stumatchdistributed.node.EnhancedStorageNode.<init>(EnhancedStorageNode.java:86)
+	at org.distributed.stumatchdistributed.node.EnhancedStorageNode$Builder.build(EnhancedStorageNode.java:341)
+	at org.distributed.stumatchdistributed.node.EnhancedStorageNode.main(EnhancedStorageNode.java:360)

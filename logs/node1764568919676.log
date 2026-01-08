@@ -1,0 +1,55 @@
+07:02:00.430 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ╔════════════════════════════════════════════════════════╗
+07:02:00.430 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  ENHANCED STORAGE NODE INITIALIZATION                  ║
+07:02:00.430 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ╠════════════════════════════════════════════════════════╣
+07:02:00.448 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  Node ID: node1764568919676                                                           ║
+07:02:00.454 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ╚════════════════════════════════════════════════════════╝
+07:02:00.454 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- 🌐 Step 1: Assigning network interface...
+07:02:00.462 [main] INFO org.distributed.stumatchdistributed.network.NetworkInterfaceManager -- 🌐 Network interface assigned to node1764568919676
+07:02:00.462 [main] INFO org.distributed.stumatchdistributed.network.NetworkInterfaceManager --    IP Address: 192.168.100.10
+07:02:00.462 [main] INFO org.distributed.stumatchdistributed.network.NetworkInterfaceManager --    MAC Address: 02:00:00:00:00:0A
+07:02:00.462 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ✅ IP Address: 192.168.100.10
+07:02:00.462 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ✅ MAC Address: 02:00:00:00:00:0A
+07:02:00.462 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- 💾 Step 2: Creating virtual disk...
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- 📝 Disk file created: C:\Users\noble\distributed-storage\disks\node1764568919676-disk.vdisk
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- 🖴 Virtual Disk Created: node1764568919676-disk
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk --    Size: 100 GB
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk --    Location: C:\Users\noble\distributed-storage\disks\node1764568919676-disk.vdisk
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ✅ Virtual Disk: 100 GB
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    🔧 Formatting virtual disk...
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- 🔧 Formatting disk: node1764568919676-disk
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- ✅ Disk formatted successfully: node1764568919676-disk
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- 📂 Disk mounted: node1764568919676-disk
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ✅ Disk mounted
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- 🔧 Step 3: Initializing lifecycle manager...
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.node.NodeLifecycleManager -- 🔧 Node Lifecycle Manager created for: node1764568919676
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.node.NodeLifecycleManager --    State: CREATED
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ✅ Lifecycle manager ready
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ⚙️  Step 4: Initializing process manager...
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.process.ProcessManager -- 🔧 Process Manager initialized for: node1764568919676
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.process.ProcessManager --    Max concurrent processes: 4
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ✅ Process manager ready (4 cores)
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ╔════════════════════════════════════════════════════════╗
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  ✅ NODE INITIALIZATION COMPLETE                       ║
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ╠════════════════════════════════════════════════════════╣
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  Node ID:     node1764568919676                                                 ║
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  IP Address:  192.168.100.10                                              ║
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  Port:        50058                                ║
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  Storage:     100 GB (Virtual Disk)                 ║
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  RAM:         8 GB                                  ║
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  CPU Cores:   4                                     ║
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  Status:      READY                                   ║
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ╚════════════════════════════════════════════════════════╝
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- 🚀 Starting node: node1764568919676
+07:02:00.530 [main] INFO org.distributed.stumatchdistributed.node.NodeLifecycleManager -- 🚀 Activating node: node1764568919676
+07:02:00.548 [main] INFO org.distributed.stumatchdistributed.node.NodeLifecycleManager -- 🔄 Node node1764568919676 state change: CREATED → READY
+07:02:00.556 [main] INFO org.distributed.stumatchdistributed.node.NodeLifecycleManager -- ✅ Node activated: node1764568919676
+07:02:00.562 [main] INFO org.distributed.stumatchdistributed.process.ProcessManager -- ▶️  Process scheduler started for: node1764568919676
+07:02:01.396 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ╔════════════════════════════════════════════════════════╗
+07:02:01.396 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  ✅ NODE STARTED SUCCESSFULLY                          ║
+07:02:01.396 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ╠════════════════════════════════════════════════════════╣
+07:02:01.396 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  Node ID:     node1764568919676                                                 ║
+07:02:01.396 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  IP:Port:     192.168.100.10           :50058                 ║
+07:02:01.396 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  State:       WAITING (Ready for requests)            ║
+07:02:01.396 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  Disk:        MOUNTED                                 ║
+07:02:01.398 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ╚════════════════════════════════════════════════════════╝
+07:02:01.573 [node1764568919676-worker-0] INFO org.distributed.stumatchdistributed.node.NodeLifecycleManager -- 🔄 Node node1764568919676 state change: READY → WAITING

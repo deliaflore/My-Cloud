@@ -1,0 +1,34 @@
+08:45:07.616 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ╔════════════════════════════════════════════════════════╗
+08:45:07.622 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  ENHANCED STORAGE NODE INITIALIZATION                  ║
+08:45:07.622 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ╠════════════════════════════════════════════════════════╣
+08:45:07.622 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  Node ID: node1764575107278                                                           ║
+08:45:07.622 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ╚════════════════════════════════════════════════════════╝
+08:45:07.622 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- 🌐 Step 1: Assigning network interface...
+08:45:07.629 [main] INFO org.distributed.stumatchdistributed.network.NetworkInterfaceManager -- 🌐 Network interface assigned to node1764575107278
+08:45:07.629 [main] INFO org.distributed.stumatchdistributed.network.NetworkInterfaceManager --    IP Address: 192.168.100.10
+08:45:07.629 [main] INFO org.distributed.stumatchdistributed.network.NetworkInterfaceManager --    MAC Address: 02:00:00:00:00:0A
+08:45:07.629 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ✅ IP Address: 192.168.100.10
+08:45:07.629 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ✅ MAC Address: 02:00:00:00:00:0A
+08:45:07.629 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- 💾 Step 2: Creating virtual disk...
+08:45:07.633 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- 📝 Creating REAL virtual disk with 107374182400 bytes allocated...
+08:45:07.633 [main] ERROR org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- Failed to create disk file
+java.io.IOException: There is not enough space on the disk
+	at java.base/java.io.RandomAccessFile.setLength0(Native Method)
+	at java.base/java.io.RandomAccessFile.setLength(RandomAccessFile.java:683)
+	at org.distributed.stumatchdistributed.virtualdisk.VirtualDisk.createDiskFile(VirtualDisk.java:92)
+	at org.distributed.stumatchdistributed.virtualdisk.VirtualDisk.<init>(VirtualDisk.java:66)
+	at org.distributed.stumatchdistributed.node.EnhancedStorageNode.<init>(EnhancedStorageNode.java:86)
+	at org.distributed.stumatchdistributed.node.EnhancedStorageNode$Builder.build(EnhancedStorageNode.java:341)
+	at org.distributed.stumatchdistributed.node.EnhancedStorageNode.main(EnhancedStorageNode.java:360)
+08:45:07.633 [main] ERROR org.distributed.stumatchdistributed.node.EnhancedStorageNode -- Failed to start node
+java.lang.RuntimeException: Cannot create virtual disk
+	at org.distributed.stumatchdistributed.virtualdisk.VirtualDisk.createDiskFile(VirtualDisk.java:110)
+	at org.distributed.stumatchdistributed.virtualdisk.VirtualDisk.<init>(VirtualDisk.java:66)
+	at org.distributed.stumatchdistributed.node.EnhancedStorageNode.<init>(EnhancedStorageNode.java:86)
+	at org.distributed.stumatchdistributed.node.EnhancedStorageNode$Builder.build(EnhancedStorageNode.java:341)
+	at org.distributed.stumatchdistributed.node.EnhancedStorageNode.main(EnhancedStorageNode.java:360)
+Caused by: java.io.IOException: There is not enough space on the disk
+	at java.base/java.io.RandomAccessFile.setLength0(Native Method)
+	at java.base/java.io.RandomAccessFile.setLength(RandomAccessFile.java:683)
+	at org.distributed.stumatchdistributed.virtualdisk.VirtualDisk.createDiskFile(VirtualDisk.java:92)
+	... 4 common frames omitted

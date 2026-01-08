@@ -1,0 +1,79 @@
+03:26:48.182 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ??????????????????????????????????????????????????????????
+03:26:48.205 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  ENHANCED STORAGE NODE INITIALIZATION                  ?
+03:26:48.214 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ??????????????????????????????????????????????????????????
+03:26:48.255 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  Node ID: node1767839205872                                                           ?
+03:26:48.272 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ??????????????????????????????????????????????????????????
+03:26:48.275 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ? Step 1: Assigning network interface...
+03:26:48.297 [main] INFO org.distributed.stumatchdistributed.network.NetworkInterfaceManager -- ? Network interface assigned to node1767839205872
+03:26:48.299 [main] INFO org.distributed.stumatchdistributed.network.NetworkInterfaceManager --    IP Address: 192.168.100.10
+03:26:48.299 [main] INFO org.distributed.stumatchdistributed.network.NetworkInterfaceManager --    MAC Address: 02:00:00:00:00:0A
+03:26:48.299 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ? IP Address: 192.168.100.10
+03:26:48.299 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ? MAC Address: 02:00:00:00:00:0A
+03:26:48.299 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ? Step 2: Creating virtual disk...
+03:26:48.321 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- ? Creating REAL virtual disk with 5368709120 bytes allocated...
+03:26:48.330 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- ? Virtual disk file created with REAL 5 GB allocated on disk
+03:26:48.331 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk --    File: C:\Users\bnyam\distributed-storage\disks\node1767839205872-disk.vdisk
+03:26:48.331 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk --    This is REAL storage allocation (not sparse) - as required!
+03:26:48.332 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- ? Disk file created: C:\Users\bnyam\distributed-storage\disks\node1767839205872-disk.vdisk
+03:26:48.332 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- ? Virtual Disk Created: node1767839205872-disk
+03:26:48.332 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk --    Size: 5 GB
+03:26:48.332 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk --    Location: C:\Users\bnyam\distributed-storage\disks\node1767839205872-disk.vdisk
+03:26:48.333 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ? Virtual Disk: 5 GB
+03:26:48.335 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ? Formatting virtual disk...
+03:26:48.337 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- ? Formatting disk: node1767839205872-disk
+03:26:48.356 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- ? Disk formatted successfully: node1767839205872-disk
+03:26:48.357 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- ? Disk mounted: node1767839205872-disk
+03:26:48.357 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ? Disk mounted
+03:26:48.357 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ? Step 3: Initializing lifecycle manager...
+03:26:48.378 [main] INFO org.distributed.stumatchdistributed.node.NodeLifecycleManager -- ? Node Lifecycle Manager created for: node1767839205872
+03:26:48.383 [main] INFO org.distributed.stumatchdistributed.node.NodeLifecycleManager --    State: CREATED
+03:26:48.388 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ? Lifecycle manager ready
+03:26:48.388 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ??  Step 4: Initializing process manager...
+03:26:48.390 [main] INFO org.distributed.stumatchdistributed.process.ProcessManager -- ? Process Manager initialized for: node1767839205872
+03:26:48.392 [main] INFO org.distributed.stumatchdistributed.process.ProcessManager --    Max concurrent processes: 4
+03:26:48.392 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ? Process manager ready (4 cores)
+03:26:48.392 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ??????????????????????????????????????????????????????????
+03:26:48.392 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  ? NODE INITIALIZATION COMPLETE                       ?
+03:26:48.392 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ??????????????????????????????????????????????????????????
+03:26:48.392 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  Node ID:     node1767839205872                                                 ?
+03:26:48.392 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  IP Address:  192.168.100.10                                              ?
+03:26:48.392 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  Port:        50052                                ?
+03:26:48.392 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  Storage:     5 GB (Virtual Disk)                 ?
+03:26:48.394 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  RAM:         8 GB                                  ?
+03:26:48.394 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  CPU Cores:   4                                     ?
+03:26:48.394 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ?  Status:      READY                                   ?
+03:26:48.394 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ??????????????????????????????????????????????????????????
+03:26:48.394 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ? Starting node: node1767839205872
+03:26:48.394 [main] INFO org.distributed.stumatchdistributed.node.NodeLifecycleManager -- ? Activating node: node1767839205872
+03:26:48.416 [main] INFO org.distributed.stumatchdistributed.node.NodeLifecycleManager -- ? Node node1767839205872 state change: CREATED ? READY
+03:26:48.454 [main] INFO org.distributed.stumatchdistributed.node.NodeLifecycleManager -- ? Node activated: node1767839205872
+03:26:48.457 [main] INFO org.distributed.stumatchdistributed.process.ProcessManager -- ??  Process scheduler started for: node1767839205872
+03:26:49.459 [node1767839205872-worker-0] INFO org.distributed.stumatchdistributed.node.NodeLifecycleManager -- ? Node node1767839205872 state change: READY ? WAITING
+03:26:51.171 [main] ERROR org.distributed.stumatchdistributed.node.EnhancedStorageNode -- Failed to start node
+java.io.IOException: Failed to bind to address 0.0.0.0/0.0.0.0:50052
+	at io.grpc.netty.NettyServer.start(NettyServer.java:341)
+	at io.grpc.internal.ServerImpl.start(ServerImpl.java:185)
+	at io.grpc.internal.ServerImpl.start(ServerImpl.java:94)
+	at org.distributed.stumatchdistributed.node.EnhancedStorageNode.start(EnhancedStorageNode.java:140)
+	at org.distributed.stumatchdistributed.node.EnhancedStorageNode.main(EnhancedStorageNode.java:362)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:555)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:141)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:561)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1281)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:600)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:579)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:922)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:259)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:380)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)

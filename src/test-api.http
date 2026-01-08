@@ -1,0 +1,86 @@
+### ============================================
+### MINI GOOGLE DRIVE - API TEST SUITE
+### ============================================
+
+### 1. REGISTER USER (creates account + sends OTP)
+POST http://localhost:8081/api/auth/register
+Content-Type: application/json
+
+{
+  "fullName": "Demo User",
+  "email": "demo@example.com",
+  "password": "DemoPass123!"
+}
+
+### 2. LOGIN (sends OTP to email/console)
+POST http://localhost:8081/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "demo@example.com",
+  "password": "DemoPass123!"
+}
+
+### 3. VERIFY OTP (replace {{otp_code}} with actual code from logs/email)
+# Check console logs for: "OTP for demo@example.com is XXXXXX"
+POST http://localhost:8081/api/auth/verify-otp
+Content-Type: application/json
+
+{
+  "email": "demo@example.com",
+  "code": "123456"
+}
+
+### 4. SAVE TOKEN (copy token from verify-otp response)
+# @name saveToken
+@token = {{verifyOtp.response.body.token}}
+
+### 5. LIST FILES (requires JWT token)
+GET http://localhost:8081/api/files
+Authorization: Bearer {{token}}
+
+### 6. UPLOAD FILE (requires JWT token)
+POST http://localhost:8081/api/files/upload
+Authorization: Bearer {{token}}
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="sample.txt"
+Content-Type: text/plain
+
+Hello from IntelliJ HTTP Client!
+This is a test file for the mini Google Drive.
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+### 7. LIST FILES AGAIN (to see uploaded file)
+GET http://localhost:8081/api/files
+Authorization: Bearer {{token}}
+
+### 8. DOWNLOAD FILE (replace {{fileId}} with UUID from list response)
+GET http://localhost:8081/api/files/{{fileId}}
+Authorization: Bearer {{token}}
+
+### 9. DELETE FILE (replace {{fileId}} with UUID)
+DELETE http://localhost:8081/api/files/{{fileId}}
+Authorization: Bearer {{token}}
+
+### ============================================
+### NETWORK MANAGEMENT (for node operations)
+### ============================================
+
+### Get all registered nodes
+GET http://localhost:8081/api/network/nodes
+
+### Get network status
+GET http://localhost:8081/api/network/status
+
+### Start a new node (from web interface)
+POST http://localhost:8081/api/network/nodes/start
+Content-Type: application/json
+
+{
+  "nodeId": "node6",
+  "port": 50056,
+  "storageGB": 100,
+  "ramGB": 8
+}

@@ -1,0 +1,74 @@
+06:06:38.288 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ╔════════════════════════════════════════════════════════╗
+06:06:38.296 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  ENHANCED STORAGE NODE INITIALIZATION                  ║
+06:06:38.296 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ╠════════════════════════════════════════════════════════╣
+06:06:38.304 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  Node ID: node1764565597495                                                           ║
+06:06:38.306 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ╚════════════════════════════════════════════════════════╝
+06:06:38.306 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- 🌐 Step 1: Assigning network interface...
+06:06:38.320 [main] INFO org.distributed.stumatchdistributed.network.NetworkInterfaceManager -- 🌐 Network interface assigned to node1764565597495
+06:06:38.322 [main] INFO org.distributed.stumatchdistributed.network.NetworkInterfaceManager --    IP Address: 192.168.100.10
+06:06:38.322 [main] INFO org.distributed.stumatchdistributed.network.NetworkInterfaceManager --    MAC Address: 02:00:00:00:00:0A
+06:06:38.322 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ✅ IP Address: 192.168.100.10
+06:06:38.322 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ✅ MAC Address: 02:00:00:00:00:0A
+06:06:38.322 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- 💾 Step 2: Creating virtual disk...
+06:06:38.420 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- 📝 Disk file created: C:\Users\noble\distributed-storage\disks\node1764565597495-disk.vdisk
+06:06:38.420 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- 🖴 Virtual Disk Created: node1764565597495-disk
+06:06:38.420 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk --    Size: 100 GB
+06:06:38.420 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk --    Location: C:\Users\noble\distributed-storage\disks\node1764565597495-disk.vdisk
+06:06:38.420 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ✅ Virtual Disk: 100 GB
+06:06:38.420 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    🔧 Formatting virtual disk...
+06:06:38.420 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- 🔧 Formatting disk: node1764565597495-disk
+06:06:38.423 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- ✅ Disk formatted successfully: node1764565597495-disk
+06:06:38.423 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- 📂 Disk mounted: node1764565597495-disk
+06:06:38.423 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ✅ Disk mounted
+06:06:38.423 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- 🔧 Step 3: Initializing lifecycle manager...
+06:06:38.432 [main] INFO org.distributed.stumatchdistributed.node.NodeLifecycleManager -- 🔧 Node Lifecycle Manager created for: node1764565597495
+06:06:38.432 [main] INFO org.distributed.stumatchdistributed.node.NodeLifecycleManager --    State: CREATED
+06:06:38.432 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ✅ Lifecycle manager ready
+06:06:38.432 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ⚙️  Step 4: Initializing process manager...
+06:06:38.432 [main] INFO org.distributed.stumatchdistributed.process.ProcessManager -- 🔧 Process Manager initialized for: node1764565597495
+06:06:38.432 [main] INFO org.distributed.stumatchdistributed.process.ProcessManager --    Max concurrent processes: 4
+06:06:38.432 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ✅ Process manager ready (4 cores)
+06:06:38.432 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ╔════════════════════════════════════════════════════════╗
+06:06:38.432 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  ✅ NODE INITIALIZATION COMPLETE                       ║
+06:06:38.432 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ╠════════════════════════════════════════════════════════╣
+06:06:38.432 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  Node ID:     node1764565597495                                                 ║
+06:06:38.432 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  IP Address:  192.168.100.10                                              ║
+06:06:38.432 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  Port:        50053                                ║
+06:06:38.432 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  Storage:     100 GB (Virtual Disk)                 ║
+06:06:38.432 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  RAM:         8 GB                                  ║
+06:06:38.432 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  CPU Cores:   4                                     ║
+06:06:38.437 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  Status:      READY                                   ║
+06:06:38.437 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ╚════════════════════════════════════════════════════════╝
+06:06:38.437 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- 🚀 Starting node: node1764565597495
+06:06:38.437 [main] INFO org.distributed.stumatchdistributed.node.NodeLifecycleManager -- 🚀 Activating node: node1764565597495
+06:06:38.439 [main] INFO org.distributed.stumatchdistributed.node.NodeLifecycleManager -- 🔄 Node node1764565597495 state change: CREATED → READY
+06:06:38.456 [main] INFO org.distributed.stumatchdistributed.node.NodeLifecycleManager -- ✅ Node activated: node1764565597495
+06:06:38.456 [main] INFO org.distributed.stumatchdistributed.process.ProcessManager -- ▶️  Process scheduler started for: node1764565597495
+06:06:39.381 [main] ERROR org.distributed.stumatchdistributed.node.EnhancedStorageNode -- Failed to start node
+java.io.IOException: Failed to bind to address 0.0.0.0/0.0.0.0:50053
+	at io.grpc.netty.NettyServer.start(NettyServer.java:341)
+	at io.grpc.internal.ServerImpl.start(ServerImpl.java:185)
+	at io.grpc.internal.ServerImpl.start(ServerImpl.java:94)
+	at org.distributed.stumatchdistributed.node.EnhancedStorageNode.start(EnhancedStorageNode.java:140)
+	at org.distributed.stumatchdistributed.node.EnhancedStorageNode.main(EnhancedStorageNode.java:362)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:565)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:141)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:561)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1281)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:600)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:579)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:922)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:259)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:380)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)

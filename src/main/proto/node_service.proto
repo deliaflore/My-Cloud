@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "org.distributed.stumatchdistributed.grpc";
+option java_outer_classname = "NodeServiceProto";
+
+package nodeservice;
+
+service NodeService {
+  rpc StoreChunk(StoreChunkRequest) returns (StoreChunkResponse);
+  rpc RetrieveChunk(RetrieveChunkRequest) returns (RetrieveChunkResponse);
+  rpc GetStatus(StatusRequest) returns (StatusResponse);
+}
+
+message StoreChunkRequest {
+  string chunk_id = 1;
+  bytes data = 2;
+  int64 size = 3;
+}
+
+message StoreChunkResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message RetrieveChunkRequest {
+  string chunk_id = 1;
+}
+
+message RetrieveChunkResponse {
+  bytes data = 1;
+  bool success = 2;
+}
+
+message StatusRequest {}
+
+message StatusResponse {
+  string node_id = 1;
+  int64 used_storage = 2;
+  int64 total_storage = 3;
+  int32 num_chunks = 4;
+  double utilization_percent = 5;
+}

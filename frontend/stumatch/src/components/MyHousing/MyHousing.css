@@ -1,0 +1,192 @@
+.my-housing {
+    max-width: 1000px;
+    margin: 0 auto;
+    animation: fadeIn 0.5s var(--ease-out);
+}
+
+.page-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 0.75rem 0;
+    background: linear-gradient(135deg, var(--primary-700) 0%, var(--secondary-600) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.page-subtitle {
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+    color: var(--neutral-700);
+    margin: 0 0 2.5rem 0;
+}
+
+.housing-info, 
+.roommates-section, 
+.documents-section, 
+.bills-section {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--radius-2xl);
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    animation: slideUp 0.5s var(--ease-out) backwards;
+}
+
+.housing-info {
+    animation-delay: 0.1s;
+}
+
+.roommates-section {
+    animation-delay: 0.2s;
+}
+
+.documents-section {
+    animation-delay: 0.3s;
+}
+
+.bills-section {
+    animation-delay: 0.4s;
+}
+
+.housing-info h2,
+.roommates-section h2,
+.documents-section h2,
+.bills-section h2 {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--neutral-900);
+    margin: 0 0 1.5rem 0;
+}
+
+.info-card {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+    padding: 2rem;
+    border-radius: var(--radius-xl);
+    margin-top: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.info-card p {
+    font-family: var(--font-body);
+    font-size: 0.9375rem;
+    color: var(--neutral-700);
+    margin: 0.75rem 0;
+}
+
+.info-card strong {
+    color: var(--neutral-900);
+    font-weight: 700;
+}
+
+.roommates-list, 
+.documents-list, 
+.bills-list {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.roommate-item, 
+.document-item, 
+.bill-item {
+    padding: 1.25rem 1.5rem;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--radius-xl);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: var(--font-body);
+    font-size: 0.9375rem;
+    color: var(--neutral-800);
+    transition: all var(--duration-normal) var(--ease-out);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.roommate-item:hover,
+.document-item:hover,
+.bill-item:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateX(8px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.bill-item {
+    justify-content: space-between;
+}
+
+.bill-item svg {
+    width: 20px;
+    height: 20px;
+    color: var(--neutral-600);
+}
+
+.status-paid {
+    color: var(--success);
+    font-weight: 700;
+    padding: 0.375rem 0.875rem;
+    background: var(--success-light);
+    border-radius: var(--radius-full);
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.status-pending {
+    color: var(--warning);
+    font-weight: 700;
+    padding: 0.375rem 0.875rem;
+    background: var(--warning-light);
+    border-radius: var(--radius-full);
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.btn-upload {
+    margin-top: 1.5rem;
+    background: linear-gradient(135deg, var(--secondary-500) 0%, var(--secondary-600) 100%);
+    color: white;
+    border: none;
+    padding: 0.875rem 1.75rem;
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 0.9375rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    transition: all var(--duration-normal) var(--ease-out);
+    box-shadow: 0 8px 20px rgba(69, 177, 232, 0.3);
+}
+
+.btn-upload:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(69, 177, 232, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .housing-info,
+    .roommates-section,
+    .documents-section,
+    .bills-section {
+        padding: 1.75rem;
+    }
+}

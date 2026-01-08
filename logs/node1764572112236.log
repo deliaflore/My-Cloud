@@ -1,0 +1,25 @@
+07:55:20.796 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ╔════════════════════════════════════════════════════════╗
+07:55:20.799 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  ENHANCED STORAGE NODE INITIALIZATION                  ║
+07:55:20.799 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ╠════════════════════════════════════════════════════════╣
+07:55:20.801 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ║  Node ID: node1764572112236                                                           ║
+07:55:20.803 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- ╚════════════════════════════════════════════════════════╝
+07:55:20.803 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- 🌐 Step 1: Assigning network interface...
+07:55:20.806 [main] INFO org.distributed.stumatchdistributed.network.NetworkInterfaceManager -- 🌐 Network interface assigned to node1764572112236
+07:55:20.806 [main] INFO org.distributed.stumatchdistributed.network.NetworkInterfaceManager --    IP Address: 192.168.100.10
+07:55:20.806 [main] INFO org.distributed.stumatchdistributed.network.NetworkInterfaceManager --    MAC Address: 02:00:00:00:00:0A
+07:55:20.806 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ✅ IP Address: 192.168.100.10
+07:55:20.806 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode --    ✅ MAC Address: 02:00:00:00:00:0A
+07:55:20.806 [main] INFO org.distributed.stumatchdistributed.node.EnhancedStorageNode -- 💾 Step 2: Creating virtual disk...
+07:55:20.809 [main] INFO org.distributed.stumatchdistributed.virtualdisk.VirtualDisk -- 📝 Using existing disk file: C:\Users\noble\distributed-storage\disks\node1764572112236-disk.vdisk
+07:55:20.820 [main] ERROR org.distributed.stumatchdistributed.node.EnhancedStorageNode -- Failed to start node
+java.io.EOFException: null
+	at java.base/java.io.ObjectInputStream$PeekInputStream.readFully(ObjectInputStream.java:2933)
+	at java.base/java.io.ObjectInputStream$BlockDataInputStream.readShort(ObjectInputStream.java:3428)
+	at java.base/java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:985)
+	at java.base/java.io.ObjectInputStream.<init>(ObjectInputStream.java:416)
+	at org.distributed.stumatchdistributed.virtualdisk.VirtualDisk.loadMetadata(VirtualDisk.java:303)
+	at org.distributed.stumatchdistributed.virtualdisk.VirtualDisk.createDiskFile(VirtualDisk.java:116)
+	at org.distributed.stumatchdistributed.virtualdisk.VirtualDisk.<init>(VirtualDisk.java:66)
+	at org.distributed.stumatchdistributed.node.EnhancedStorageNode.<init>(EnhancedStorageNode.java:86)
+	at org.distributed.stumatchdistributed.node.EnhancedStorageNode$Builder.build(EnhancedStorageNode.java:341)
+	at org.distributed.stumatchdistributed.node.EnhancedStorageNode.main(EnhancedStorageNode.java:360)
