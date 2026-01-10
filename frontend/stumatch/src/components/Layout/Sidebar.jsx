@@ -15,8 +15,12 @@ export default function Sidebar({ userRole = 'student' }) {
     return (
         <aside className="sidebar">
             <div className="sidebar-header">
-                <Building2 className="sidebar-logo" />
-                <h2>MyCloud</h2>
+            <img
+                src="/mycloud.png"
+                alt="MyCloud"
+                className="auth-logo"
+                style={{ width: "200px", height: "200px" }}
+            />
                 <p className="sidebar-subtitle">Agricultural Data and Resource Management System</p>
             </div>
 
