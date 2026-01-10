@@ -17,7 +17,7 @@ export default function Sidebar({ userRole = 'student' }) {
             <div className="sidebar-header">
                 <Building2 className="sidebar-logo" />
                 <h2>MyCloud</h2>
-                <p className="sidebar-subtitle">Student Housing Platform</p>
+                <p className="sidebar-subtitle">Agricultural Data and Resource Management System</p>
             </div>
 
             <nav className="sidebar-nav">
@@ -28,12 +28,12 @@ export default function Sidebar({ userRole = 'student' }) {
 
                 <NavLink to="/housing" className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'}>
                     <Building2 className="nav-icon" />
-                    <span>Housing Market</span>
+                    <span>Available Farm</span>
                 </NavLink>
 
                 <NavLink to="/roommates" className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'}>
                     <Users className="nav-icon" />
-                    <span>Find Roommates</span>
+                    <span>Find Compatible Farms</span>
                 </NavLink>
 
                 <NavLink to="/my-housing" className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'}>

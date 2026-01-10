@@ -202,9 +202,14 @@ export default function MyCloudApp() {
             <div className="auth-container">
                 <div className="auth-card">
                     <div className="auth-header">
-                        <Folder className="auth-logo" />
-                        <h1>MyCloud</h1>
-                        <p>Student Housing & Cloud Storage</p>
+                        <img
+                            src="/mycloud.png"
+                            alt="MyCloud"
+                            className="auth-logo"
+                            style={{ width: "200px", height: "200px" }}
+                            />
+
+                        <p>Agricultural Data and Resource Management System</p>
                     </div>
 
                     {error && (
@@ -262,7 +267,12 @@ export default function MyCloudApp() {
             <div className="auth-container">
                 <div className="auth-card">
                     <div className="auth-header">
-                        <Folder className="auth-logo" />
+                        <img
+                            src="/mycloud.png"
+                            alt="MyCloud"
+                            className="auth-logo"
+                            style={{ width: "200px", height: "200px" }}
+                            />
                         <h1>Create Account</h1>
                         <p>Join MyCloud today</p>
                     </div>

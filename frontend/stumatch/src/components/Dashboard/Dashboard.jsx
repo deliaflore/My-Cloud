@@ -22,14 +22,14 @@ export default function Dashboard({ files, networkStatus, storage }) {
 
     const stats = [
         {
-            title: 'Available Listings',
+            title: 'Available Farmers',
             value: '45',
             change: '+12%',
             icon: Building2,
             color: '#667eea'
         },
         {
-            title: 'Compatible Roommates',
+            title: 'Compatible Farms',
             value: '12',
             change: '+3 new',
             icon: Users,
@@ -54,15 +54,15 @@ export default function Dashboard({ files, networkStatus, storage }) {
     const recentActivity = [
         {
             type: 'listing',
-            title: 'New listing near ICT Campus',
-            description: '2-bedroom apartment, $120/month',
+            title: 'New Farms at Nkoabang',
+            description: '1-hecter of Land, $120/month',
             time: '2 hours ago',
             icon: Building2,
             status: 'new'
         },
         {
             type: 'match',
-            title: 'Roommate match found',
+            title: 'Compatible Farm found',
             description: 'John Doe - 85% compatibility',
             time: '5 hours ago',
             icon: Users,
@@ -91,7 +91,7 @@ export default function Dashboard({ files, networkStatus, storage }) {
             <div className="dashboard-header">
                 <div>
                     <h1 className="dashboard-title">Dashboard</h1>
-                    <p className="dashboard-subtitle">Overview of your housing and storage</p>
+                    <p className="dashboard-subtitle">Overview of your farm and storage</p>
                 </div>
             </div>
 
@@ -157,13 +157,13 @@ export default function Dashboard({ files, networkStatus, storage }) {
                 <div className="actions-grid">
                     <button className="action-card">
                         <Building2 className="action-icon" />
-                        <h3>Browse Housing</h3>
+                        <h3>Browse Farms</h3>
                         <p>Find your perfect place</p>
                     </button>
 
                     <button className="action-card">
                         <Users className="action-icon" />
-                        <h3>Find Roommates</h3>
+                        <h3>Find Farms</h3>
                         <p>Match with compatible people</p>
                     </button>
 

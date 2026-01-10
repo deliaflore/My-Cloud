@@ -15,7 +15,7 @@ export default function Header({ user, storage, networkStatus, onLogout }) {
         <header className="app-header-new">
             <div className="header-left-new">
                 <h1 className="header-title">Welcome back!</h1>
-                <p className="header-subtitle">Manage your housing and find roommates</p>
+                <p className="header-subtitle">Manage your Farm and get related farmers</p>
             </div>
 
             <div className="header-right-new">
@@ -52,7 +52,7 @@ export default function Header({ user, storage, networkStatus, onLogout }) {
                     </div>
                     <div className="user-info">
                         <span className="user-name">{user?.fullName || 'User'}</span>
-                        <span className="user-role">Student</span>
+                        <span className="user-role">Farmer</span>
                     </div>
                 </div>
 
